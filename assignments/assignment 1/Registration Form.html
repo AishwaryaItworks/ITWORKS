@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+   <style>
+   </style>
+</head>
+<title>Employee Registration Form</title>
+<body bgcolor="Lightskyblue">
+   
+      <form>
+         <fieldset>
+            <legend>EMPLOYEE APPLICATION FORM</legend>
+            <table>
+            <br><label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" value="aishwarya"/></br>
+            <p id="demo"></p>
+            
+            <br><label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname"/></br>
+            <br><label for="email">Email:</label>
+            <input type="email" id="email" name="email"/><br>
+            <br><label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+            </br>
+            
+            
+            <br><label for="address">Address:</label>
+            <textarea></textarea>
+            </br>
+            <br><label for="mobile_no">Mobile Number:</label>
+            <input type="number" id="mobile_no" name="mobile_no"/>
+            </br>
+            <!---<br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            </br>--->
+            
+            
+            <br><label>Gender:</label>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <input type="radio" id="gender" name="gender" value="other">Other
+            </br>
+            <br><label for="State">State:</label>
+            <select name="State" id="State">
+               <option value="Maharashtra">Maharashtra</option>
+               <option value="Karnataka">Karnataka</option>
+               <option value="Tamilnadu">Tamilnadu</option>
+               <option value="Gujarat">Gujarat</option>
+               <option value="Keral">Keral</option>
+               <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select></br>
+            
+            <br><label for="Locate">Ready to Relocate:</label>
+            <input type="checkbox" id="Locate" name="Locate" value="Pune">
+            <label for="Locate">Pune</label>
+            <input type="checkbox" id="Locate" name="Locate" value="Mumbai">
+            <label for="Locate">Mumbai</label>
+            <input type="checkbox" id="Locate" name="Locate" value="Banglore">
+            <label for="Locate">Banglore</label>
+            </br>
+            <br><label for="Hobbies">Hobbies:</label>
+            <select name="Hobbies" id="Hobbies" multiple>
+               <option value="Dancing">Dancing</option>
+               <option value="Singing">Singing</option>
+               <option value="Writing">Writing</option>
+               <option value="Swimming">Swimming</option>
+            </select>
+            </br>
+            <br><label>Department</label>
+            <select name="Department" id="Department">
+               <optgroup label="IT">
+                  <option value="R&D ">R & D</option>
+                  <option value="Production">Production</option>
+               </optgroup>
+               <optgroup label="HR">
+                  <option value="Recruitment and Selection">Recruitment and Selection</option>
+                  <option value="Marketing">Marketing</option>
+               </optgroup>
+            </select>
+            </br>
+            <br>
+            <label for="photo">Select your photo:</label>
+            <input type="file" id="photo" name="photo">
+            </br>
+            
+            <!--<input class="btn btn-primary" type="submit" value="Submit">  --->
+            
+            <button id="submitForm">Submit</button>
+            
+          </table>  
+         </fieldset>
+      </form>
+
+      <script>
+         var y=document.getElementById("firstname").value;
+        document.getElementById("demo").value=y;
+
+      </script>
+   
+</body>
+</html>
