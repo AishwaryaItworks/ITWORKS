@@ -1,0 +1,137 @@
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 835px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #ADD8E6;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+
+    .icon-font{
+      font-size:17px
+    }
+
+    .padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.well
+{
+  background-color: white;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #D3D3D3;
+}
+table{
+  overflow-x: hidden;
+}
+
+.navbar {
+    border: none; /* optional depending on your requirements */
+    padding-right:30px;
+}
+
+.nav > li > a {
+    
+    margin:0;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: black;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
+
+.table {
+   display: block !important;
+}
+.responsive-table > table {
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+  }
+.responsive-table {
+  overflow-x:auto;
+}

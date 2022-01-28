@@ -1,0 +1,245 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/foot-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<!--
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script>
+			$(function(){
+				$("#rol").load("header.html");
+			});
+		</script>-->
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse visible-xs">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Dashboard</a></i></li>
+            <li><a href="#">Insurance Agencies</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Carriers</a></li>
+            <li><a href="#">Configuration</a></li>
+            <li><a href="#">Clients(Companies)</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logs</a></li>
+            <li><a href="#">Audits</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3 sidenav hidden-xs">
+          <h2>Coverage<b>Wizard</b></h2>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="index.html"><i class="fa fa-dashboard icon-font"> Dashboard</i></a></li>
+            <li><a href="insurance_list.html"><i class="fa fa-users icon-font"> Insurance Agencies</i></a></li>
+            <li><a href="#"><i class="fa fa-users icon-font"> Teams</i></a></li>
+            <li><a href="#"><i class="fa fa-align-justify icon-font"> Carriers</i></a></li>
+            <li><a href="#"><i class="fa fa-cog icon-font"> Configuration</i></a></li>
+            <li class="active"><a href="client.html"><i class="fa fa-user icon-font"> Clients(Companies)</i></a></li>
+            <li><a href="#"><i class="fa fa-users icon-font"> Users</i></a></li>
+            <li><a href="#"><i class="fa fa-cog icon-font"> Settings</i></a></li>
+            <li><a href="#"><i class="fa fa-square-o icon-font"> Logs</i></a></li>
+            <li><a href="#"><i class="fa fa-file icon-font"> Audits</i></a></li>
+            <li><a href="#"><i class="fa fa fa-file-text-o icon-font"> Help</i></a></li>
+          </ul><br>
+        </div>
+        
+        
+        <br>
+        
+        <div class="col-sm-9">
+          <div class="well well-sm">
+            <nav class="navbar">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Clients(Companies)</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <li class="dropdown"><a class=" btn btn-secondary dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user icon-font"> CW Admin</i><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><i class="fa fa-cogs icon-font"> Account Settings</i></a></li>
+                  <li><a href="#"><i class="fa fa-sign-out icon-font"> Log out</i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+				
+				<div class="well">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-9">
+
+								<h4>Clients(Companies) List</h4>
+								
+								
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-9">
+								<div class="col-sm-4">
+									<label for="show"><h5>Insurance Agency</h5></label>
+									<select name="show">
+										<option value="none"></option>
+										<option value="Fail Charge">FailCharge</option>
+										<option value="Team Licence">TeamLicence</option>
+										<option value="Tagency">Tagency</option>
+										<option value="wotp">wotp</option>
+										<option value="Vaibhav Insurance Company">VaibhavInsurance</option>
+									</select>
+								</div>
+								<div class="col-sm-3">
+									<label><h5>Team</h5></label>
+									<select name="gender">
+										<option value="BKL_Team">BKL_Team</option>
+										<option value="SKL_Team">SKL_Team</option>
+										<option value="OPP_Team">OPP_Team</option>
+									</select>
+								</div>
+
+								<div class="col-sm-2">
+									<label><h5>User</h5></label>
+									<select name="gender">
+										<option value="George">George</option>
+										<option value="Neeta">Neeta</option>
+										<option value="Rahul">Rahul</option>
+									</select>
+								</div>
+								
+								<div class="col-sm-3">
+									<label><h5>Select Status</h5></label>
+									<select name="gender">
+										<option value="none"></option>
+										<option value="active">Active</option>
+										<option value="Inactive">InActive</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-9">
+								<div class="col-sm-8">
+									<label for="show"><h5>Show Entries</h5></label>
+									<select name="show">
+										<option value="none" selected></option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option><option value="10">10</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4">
+									<label><h5>Search</h5></label>
+									<input type="search" name="insuranceagencyname">
+								</div>
+							</div>
+						</div>
+						<br>
+
+
+
+
+								
+								<div class="row">
+								<div class="col-sm-9">
+									
+								<table class="table table-bordered table-responsive">
+									<thead>
+										<tr>
+											<th>No</th>
+											<th>Client(Company)Name</th>
+											<th>Insurance Agency Name</th>
+											<th>Team Name</th>
+											<th>User Name</th>
+											<th>Status</th>
+											<th>Created Datetime</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Magma Equitities-44</td>
+											<td>BKL Agency</td>
+											<td>BKL Team</td>
+											<td></td>
+											<td>Active</td>
+											<td>12-08-2021 12:57:29</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Team Licence</td>
+											<td>BKL Agency</td>
+											<td>BKL Team</td>
+											<td></td>
+											<td>Active</td>
+											<td>12-05-2021 12:56:57</td>
+											
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Test Agency</td>
+											<td>Tagency</td>
+											<td>Tagency Team</td>
+											<td></td>
+											<td>ACtive</td>
+											<td>11-25-2021 18:43:03</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Without Otp</td>
+											<td>BKL Agency</td>
+											<td>BKL Team</td>
+											<td></td>
+											<td>Active</td>
+											<td>11-25-2021 17:08:54</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Vaibhav D</td>
+											<td>BKL Agency</td>
+											<td>BKL Team</td>
+											<td></td>
+											<td>Active</td>
+											<td>02-05-2021 11:50:57</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
