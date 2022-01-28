@@ -1,0 +1,69 @@
+<html>
+<head></head>
+
+<body>
+
+<form name="my_cal">
+ 
+<!-- Here user will enter 1st number. -->
+Number 1: <input type="text" name="first">
+  
+ 
+<!-- Here user will enter 2nd number. -->
+Number 2: <input type="text" name="second">
+ 
+ 
+<!-- Here result will be displayed. -->
+Get Result: <input type="text" name="total">
+ 
+<input type="button" value="ADD" onclick="addition();">
+<input type="button" value="SUB" onclick="subtraction();">
+<input type="button" value="MUL" onclick="multiply();">
+<input type="button" value="DIV" onclick="division();">
+<input type="button" value="MOD" onclick="modulus();">
+</form>
+
+
+
+
+
+<script>
+
+	/*For Multiplication*/
+function multiply(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a*b;
+document.my_cal.total.value=c;
+}
+/*For Addition*/
+function addition(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a+b;
+document.my_cal.total.value=c;
+
+
+/*For Substraction*/
+function subtraction(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a-b;
+document.my_cal.total.value=c;
+
+/*For Division*/
+function division(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a/b;
+document.my_cal.total.value=c;
+/**/
+function modulus(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a%b;
+document.my_cal.total.value=c;
+
+</script>
+ 
+<!-- Opening a HTML Form. -->

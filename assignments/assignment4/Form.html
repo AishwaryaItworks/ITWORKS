@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>Javascript Example</title>
+    </head>
+    <body>
+
+        <form>
+        <!--Text Area-->
+        <h4>Get Value for Text Area</h4>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50">82/22,Sagar Colony Shastrinagar kothrud pune</textarea>
+        <p id="demo"></p>
+        <!-- <p id="len"></p> -->
+        <hr>
+
+        <!--Input Type-->
+        <h4>Get Value for Input Type</h4>
+        <label for="name">Name</label>
+        <input type="text"id="name" name="name" value="a">
+        <p id="data"></p>
+        <hr>
+
+        <!--Radio Button-->
+        <h4>Get Value for Radio on console</h4>
+                <label>Gender:</label>
+            <input type="radio" id="m" name="gender" value="male">Male
+            <input type="radio" id="f" name="gender" value="female" checked="checked">Female
+            <input type="radio" id="o" name="gender" value="other">Other
+        
+        <br>
+        <hr>
+        <!--Checkbox-->
+        <h4>Get Value for Checkbox</h4>
+        <label for="Locate">Ready to Relocate:</label>
+            <input type="checkbox" id="pune" name="Locate" value="Pune" checked="checked">
+            <label for="Locate">Pune</label>
+            <input type="checkbox" id="mumbai" name="Locate" value="Mumbai">
+            <label for="Locate">Mumbai</label>
+            <input type="checkbox" id="banglore" name="Locate" value="Banglore">
+            <label for="Locate">Banglore</label>
+
+            <p id="p1"></p>
+            <p id="m1"></p>
+            <p id="b1"></p>
+        <hr>
+
+
+        <!--DropDown Select-->
+        <h4>Get Value for Dropdown</h4>
+        <label for="State">State:</label>
+            <select name="State" id="State">
+               <option value="Maharashtra">Maharashtra</option>
+               <option value="Karnataka">Karnataka</option>
+               <option value="Tamilnadu">Tamilnadu</option>
+               <option value="Gujarat">Gujarat</option>
+               <option value="Keral">Keral</option>
+               <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select>
+         <button type="button" onclick="selectstate()">Selected State</button>
+        <p id="states"></p>
+        <hr>
+
+        <h3>Operations on string</h3>
+        <p id="len"></p>
+        <p id="sub"></p>
+        <p id="sli"></p>
+        <p id="slimi"></p>
+        <p id="rep">Hello Aishwarya</p>
+        <p id="upper">aishwarya</p>
+        <p id="pad"></p>
+        <p id="tr"></p>
+        <p id="con"></p>
+        <p id="padend"></p>
+        <p id="at"></p>
+        <p id="asc"></p>
+        <form>
+        <script>
+        /*Get value of textarea*/
+        var x = document.getElementById("address").value;
+        document.getElementById("demo").innerHTML=x;
+
+        /*document.getElementById("len").innerHTML="Length of string: " + x.length;*/
+
+        /*Get Value of input type*/
+        var y=document.getElementById("name").value;
+        document.getElementById("data").innerHTML=y;
+
+       /*Get Value of Radio button*/
+        if (document.getElementById('m').checked) {
+          check = document.getElementById('m').value;
+          console.log(check);
+        }
+        else if(document.getElementById('f').checked){
+            check = document.getElementById('f').value;
+          console.log(check);
+        }
+
+        else if(document.getElementById('o').checked)
+        {
+            check = document.getElementById('o').value;
+          console.log(check);
+        }
+
+
+        /*Get Checkbox value*/
+
+        var P = document.getElementById("pune");  
+        var M = document.getElementById("mumbai");
+        var B = document.getElementById("banglore");
+
+        if(P.checked == true){
+                document.getElementById("p1").innerHTML="Pune is Selected";
+            }
+            else if(M.checked==true){
+                document.getElementById("m1").innerHTML="Mumbai is Selected";
+            }
+            else if(B.checked==true){
+                document.getElementById("b2").innerHTML="Banglore is Selected";
+    
+            }
+
+         /*Get Value for dropdown*/
+         function selectstate(){
+         var z= document.getElementById("State").value;
+         document.getElementById("states").innerHTML=z;
+        }
+
+        /*String Opeartion*/
+
+        /*Length of string*/
+        var new_string="It fills my heart with joy unspeakable to rise in response to the warm and cordial welcome which you have given us. "
+        document.getElementById("len").innerHTML="Length of string: " + new_string.length;
+        
+        /*Substring of string*/
+        document.getElementById("sub").innerHTML ="Substring is: " + new_string.substring(7,13);
+
+        /*Slice*/
+        document.getElementById("sli").innerHTML = "Slice positive: " + new_string.slice(7,13);
+
+        document.getElementById("slimi").innerHTML ="Slice negative: " + new_string.slice(-13,-7);
+       
+       /*Replace function*/
+       let text = document.getElementById("rep").innerHTML; 
+       document.getElementById("rep").innerHTML ="Replace string: " +
+       text.replace("Aishwarya","Nikita");
+
+       /*Upper case*/
+       let upp = document.getElementById("upper").innerHTML;
+       document.getElementById("upper").innerHTML ="String Upper: " +
+       upp.toUpperCase();
+
+       /*Concat*/
+       let text1 = "Hello";
+       let text2 = "Javascript!";
+       let text3 = text1.concat(" ",text2);
+       document.getElementById("con").innerHTML ="Concat String: " + text3;
+   
+
+       /*String trim*/
+       let txt1 = "     Hello World!     ";
+       let txt2 = txt1.trim();
+
+       document.getElementById("tr").innerHTML =
+       "String 1=" + txt1 + "<br>String 2=" + txt2;
+
+        /*String Padding at start*/
+         let txt = "10";
+      document.getElementById("pad").innerHTML = "Padding at start: "+txt.padStart(4,'*');
+
+       /*String at the end*/
+
+      let end = "10";
+      document.getElementById("padend").innerHTML = "Padding at end: "+end.padEnd(4,'*');
+
+
+      var str = "World Document";
+      document.getElementById("at").innerHTML ="Character at position: " +str.charAt(0);
+
+      /*var text = "HELLO WORLD";*/
+      document.getElementById("asc").innerHTML = "Charcter Unicode: " +str.charCodeAt(2);
+
+
+
+        </script>
+    </body>
+</html>
