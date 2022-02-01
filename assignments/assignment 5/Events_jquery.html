@@ -1,0 +1,70 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("h2").click(function(){
+    console.log("hello click");
+  });
+
+
+  $("#p1").mouseenter(function(){
+    console.log("You entered!");
+  });
+
+
+  $("#p2").mouseleave(function(){
+    console.log("Bye! You now leave!");
+  });
+
+
+  $("#p3").mousedown(function(){
+    console.log("Mouse down over!");
+  });
+
+  $("#p4").mouseup(function(){
+    console.log("Mouse Up over!");
+  });
+
+  $("#p5").dblclick(function(){
+    console.log("Double click");
+  });
+
+  $("#p6").hover(function(){
+    $(this).css("color", "green");
+    }, function(){
+    $(this).css("color", "red");
+  });
+
+
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+
+  $("input").change(function(){
+    console.log("The text has been changed.");
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>Click on me</h2>
+<p id="p1">Mouse Enter Event</p>
+<p id="p2">Mouse Leave Event</p>
+<p id="p3">Mouse Down Event</p>
+<p id="p4">Mouse Up Event</p>
+<p id="p5">Double Click Event</p>
+<p id="p6">Hover Event</p>
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+
+
+
+</body>
+</html>
