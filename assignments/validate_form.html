@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form id="myform">
+      <fieldset>
+        <legend>EMPLOYEE APPLICATION FORM</legend>
+        <table>
+          <br><label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname"/></br>
+          <p id="demo"></p>
+          
+          <br><label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname"/></br>
+          <br><label for="email">Email:</label>
+          <input type="email" id="email" name="email"/><br>
+          <br><label for="password">Password:</label>
+          <input type="password" id="password" name="password"/>
+          </br>
+          
+          <br><label for="mobile_no">Mobile Number:</label>
+          <input type="number" id="mobile_no" name="mobile_no"/>
+          <br>
+          <br><label for="pincode">Pincode:</label>
+          <input type="number" id="pincode" name="pincode"/>
+          <input type="submit" id="submitbtn"
+          value ="Submit" class="btn btn-primary">
+        </table>
+      </fieldset>
+    </form>
+    <script>
+    $(document).ready(function () {
+    $('#myform').validate({ // initialize the plugin
+    rules: {
+
+      firstname:"required",
+      lastname:"required",
+    email: {
+    required: true,
+    email: true
+    },
+    password: {
+    required: true,
+    minlength: 8
+    },
+    pincode: {
+    required: true,
+    minlength: 5
+    }
+
+
+    }
+    });
+    });
+    </script>
+  </body>
+</html>
