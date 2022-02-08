@@ -1,6 +1,6 @@
 <html>  
 <head>
-	<title>Vote</title>
+	<title>Leap Year</title>
 </head>
 <body>  
 <form method="post">  

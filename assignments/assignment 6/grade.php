@@ -1,6 +1,6 @@
 <html>  
 <head>
-	<title>Vote</title>
+	<title>Grade</title>
 </head>
 <body>  
 <form method="post">  
@@ -13,17 +13,21 @@ Enter your Marks:
     if(isset($_POST['submit']))  
     {  
         $marks = $_POST['marks'];  
-        if($marks>=60){
+        if($marks>=60 and $marks<100){
             echo "Your Grade is: First";
         }
-        else if($marks>=45){
+        else if($marks>=45 and $marks<60){
             echo "Your Grade is: Second";
         }
-        else if($marks>=33){
+        else if($marks>=33 and $marks<45){
             echo "Your Grade is: Third";
         }
-        else{
+        else if($marks<=33){
             echo "You are Fail";
+        }
+        else if($marks>100){
+
+            echo "Please enter valid number";
         }
     }
         

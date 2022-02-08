@@ -31,12 +31,12 @@ array('Chris','16','US'),);
 echo "<font color=blue>Multidimensional Array Student:</font><br>";
 for ($row=0; $row <4; $row++) { 
   echo "<p><b>Roll Number: $row</b></p>";
-  echo "<ul>";
+ 
   for ($col = 0; $col <3; $col++) 
   {
     echo "".$student[$row][$col]." ";
   }
-  echo "</ul>";
+ 
 }
 	// code...
 
@@ -88,19 +88,21 @@ array_multisort($Colour);
 print_r($Colour);
 
 //Pop the Element of array
+
 echo"<br><br>Pop the Element of array: ";
 array_pop($Colour);
 print_r($Colour);
 
 //Push the Element of array: 
-echo"<br><br>Push the Element of array: ";
+echo"<br><br>Push the Element in array 'black': ";
+
 array_push($Colour,'black');
 print_r($Colour);
 
 //Reverse the Element of array
 echo"<br><br>Reverse the Element of array: ";
-array_reverse($Colour);
-print_r($Colour);
+$arr=array_reverse($Colour);
+print_r($arr);
 
 //Current,next,previous Element of array
 echo"<br><br>Current,next,previous Element of array: <br>";

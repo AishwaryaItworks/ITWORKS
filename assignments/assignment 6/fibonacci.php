@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>palindrome</title>
+  <title>Fibonacci</title>
 </head>
 <body>  
 <form method="post">  

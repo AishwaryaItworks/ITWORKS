@@ -1,7 +1,7 @@
 
 <html>
 <head>
-  <title>Factorial</title>
+  <title>Reverse Number</title>
 </head>
 <body>  
 <form method="post">  
