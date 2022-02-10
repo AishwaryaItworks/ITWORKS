@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+   
+      .group{
+         margin: 10px;
+         padding: 18px;
+      }
+      .content {
+        max-width: 500px;
+        margin: auto;
+        background: rgba(0,0,0,0.3);
+        padding: 10px;
+     }
+
+   .error
+   {
+     color:red;
+     font-family:verdana, Helvetica;
+     /*display: block;*/
+   }
+   label {
+    display: inline-block;
+    width:100px;
+    text-align: right;
+}
+     
+   </style>
+   
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</head>
+<title>Hotel Booking Form</title>
+<body bgcolor="Lightskyblue">
+   
+      <form id="formid" name="formid">
+         <fieldset>
+            <legend>Hotel Booking</legend>
+            <table>
+            <br><label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname"/></br>
+            <p id="demo"></p>
+            
+            <br><label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname"/></br>
+            <br><label for="email">Email:</label>
+            <input type="email" id="email" name="email"/><br>
+            <br><label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+            </br>
+            
+            
+            <br><label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+            </br>
+            <br><label for="mobile_no">Mobile Number:</label>
+            <input type="number" id="mobile_no" name="mobile_no" />
+            </br>
+            <br><label for="city">City:</label>
+            <input type="text" id="city" name="city"/></br>
+
+
+            <br><label for="state">State:</label>
+            <select name="state" id="state">
+               <option></option>
+               <option value="Maharashtra">Maharashtra</option>
+               <option value="Karnataka">Karnataka</option>
+               <option value="Tamilnadu">Tamilnadu</option>
+               <option value="Gujarat">Gujarat</option>
+               <option value="Keral">Keral</option>
+               <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select></br>
+            
+            <br><label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode"/></br>
+            <!---<br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            </br>--->
+            
+            
+            <div name="radioid">
+            <br><label>Room Preference:</label>
+            <input type="radio" id="preference" name="preference" value="Standard">Standard
+            <input type="radio" id="preference" name="preference" value="Deluxe">Deluxe
+            <input type="radio" id="preference" name="preference" value="Suite">Suite
+            </br>
+            <label for="preference" class="error"></label>
+         </div>
+
+             <br><label for="in_date">Check in Date:</label>
+            <input type="date" id="in_date" name="in_date"/></br>
+
+             <br><label for="in_time">Check in Time:</label>
+            <input type="time" id="in_time" name="in_time"/></br>
+
+             <br><label for="out_time">Check out Time:</label>
+            <input type="time" id="out_time" name="out_time"/></br>
+
+             <br><label for="out_date">Check out Date:</label>
+            <input type="date" id="out_date" name="out_date"/></br>
+            
+            <br><label for="question">Questions:</label>
+            <textarea id="question" name="question" rows="5" cols="25"></textarea>
+            </br>
+            
+            </br>
+            
+            <br>
+            <label for="photo">Select your photo:</label>
+            <input type="file" id="photo" name="photo">
+            </br>
+            
+            
+            <button id="submitForm">Submit</button>
+            
+          </table>  
+         </fieldset>
+      </form>
+
+
+<script>
+      $(document).ready(function() {
+      $("#formid").validate({
+      rules: {
+         firstname:{
+            required:true,
+
+
+         },
+         lastname:{
+            required:true,
+
+         },
+
+         email:
+         {
+            required:true,
+         },
+         password:{
+            required:true,
+            minlength:8,
+            maxlength:15,
+         },
+
+         address:{
+            required:true,
+         },
+         mobile_no:{
+            required:true,
+            minlength:10,
+            maxlength:10,
+            digits:true,
+         },
+         city:{
+            required:true,
+         },
+         state:{
+            required:true,
+         },
+         zipcode:{
+            required:true,
+            minlength:5,
+            maxlength:5,
+         },
+         preference:{
+            required:true,
+         },
+         in_date:{
+            required:true,
+         },
+         in_time:{
+            required:true,
+         },
+         out_date:{
+            required:true,
+         },
+         out_time:{
+            required:true,
+         },
+         question:{
+            required:true,
+         },
+         photo:{
+            required:true,
+         },
+
+
+
+      },
+
+      messages:{
+
+         firstname: {
+            firstname:"Please enter your firstname"
+         },
+
+         lastname:{
+            lastname:"please enter your lastname"
+            },
+
+         email:
+         {
+            email:"Please enter valid email id"
+         },
+         password:{
+            minlength:"Password should be 8 to 15 characters",
+            maxlength:"Password should be 8 to 15 characters"
+            
+         },
+
+         address:{
+            address:"Please enter address"
+         },
+         mobile_no:{
+            required:"Please enter 10 digit number"
+         },
+         city:{
+            city:"please enter city"
+         },
+         state:{
+            state:"Please Select enter state"
+         },
+         zipcode:{
+            zipcode:"Please enter 6 digit zipcode"
+         },
+         preference:{
+            required:"select the preference for hotel room"
+         },
+         in_date:{
+            in_date:"Please select check in date"
+         },
+         in_time:{
+           in_time:"Please select Check in time" 
+         },
+         out_date:{
+            out_date:"Please select check out date"
+            
+         },
+         out_time:{
+            out_time:"Please select Check out time"
+            
+         },
+         question:{
+            question:"Please enter any questions or comments"
+            
+         },
+         photo:{
+            photo:"Upload only jpeg,png file"
+            
+         },
+
+
+
+      },
+
+   });
+});
+   
+</script>
+      
+</body>
+</html>
