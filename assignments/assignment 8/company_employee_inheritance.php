@@ -44,9 +44,19 @@ class Employee extends Company{
 
 /*$com=new Company();*/
 $emp=new Employee();
-
+$emp2=new Employee();
 $emp->set_dept_detail('Operational',101);
-$emp->set_employee_detail(11,'Aishwarya',40000);
+$emp->set_employee_detail(11,'Jennie',40000);
+$emp->get_dept_detail();
+$emp->get_employee_detail();
+echo "<br>";
+$emp->set_dept_detail('Production',102);
+$emp->set_employee_detail(12,'John',50000);
+$emp->get_dept_detail();
+$emp->get_employee_detail();
+echo "<br>";
+$emp->set_dept_detail('HR',103);
+$emp->set_employee_detail(34,'Ashwini',85000);
 $emp->get_dept_detail();
 $emp->get_employee_detail();
 ?>

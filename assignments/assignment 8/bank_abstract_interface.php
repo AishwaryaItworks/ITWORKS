@@ -52,7 +52,7 @@ $acc2=new Account_holder();
 $acc->get_account_number('SBA120011','Saving');
 $acc->set_customer_detail('Nikita','Pune','12-Jan-2020');
 $acc->get_customer_detail();
-$acc->loan_account_details(4110043,'09-Feb-2022',1,00,000,10,000);
+$acc->loan_account_details(4110043,'09-Feb-2022',100000,10000);
 echo "<br>";
 
 $acc->get_account_number('SBA120012','Salary');

@@ -1,3 +1,13 @@
+<html>
+<head>
+  <style>
+  /*body{
+  background-image: url('book2.jpg');
+}*/
+</style>
+</head>
+<body>
+
 <?php
 class Book {
   // Properties
@@ -26,8 +36,15 @@ class Book {
 }
 $book_detail=new Book();
 $book2_detail=new Book();
-$book_detail->set_book_detail('Fly of wings','APJ Abdul Kalam',200,1900);
+$book3_detail=new Book();
+$book_detail->set_book_detail('Fly of wings','APJ Abdul Kalam',200,1999);
 $book_detail->get_book_detail();
 echo "<br>";
 $book2_detail->set_book_detail('Reaper Man','Terry Pratchett',450,2001);
 $book2_detail->get_book_detail();
+echo "<br>";
+$book2_detail->set_book_detail('Think Like Monk','Jay Shetty',338,2020);
+$book2_detail->get_book_detail();
+?>
+</body>
+</html>
