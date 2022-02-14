@@ -1,0 +1,66 @@
+.bg
+{
+	background: url('images/library.jpg') ; 
+	background-size: cover;
+    color: black;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+
+form {
+       background-color: #fff;
+       max-width: 500px;
+       margin: 50px auto;
+       padding: 30px 20px;
+       box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+     }
+.error
+   {
+     color:red;
+     font-family:verdana, Helvetica;
+     /*display: block;*/
+   }
+
+   .well{
+   	padding-top: 30px;
+   }
+/*FOr header file*/
+  /*@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+}
+/*end of hedaer*/*/
