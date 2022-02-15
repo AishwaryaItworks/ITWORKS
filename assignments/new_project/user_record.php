@@ -2,6 +2,8 @@
 require 'connection.php';
 require 'navbar.php';
 ?>
+
+<div class="container-fluid">
 <div class="col-md-9">
 	<table class="table table-bordered table-responsive">
 		<thead>
@@ -37,5 +39,6 @@ require 'navbar.php';
 		
 		
 	</table>
+</div>
 </div>
 <!-- </div> -->

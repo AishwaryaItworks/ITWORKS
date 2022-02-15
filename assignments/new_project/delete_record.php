@@ -7,10 +7,10 @@
  $query="DELETE FROM users where user_id=".$id;
 
  if($mysqli->query($query)){
- 	echo "Record Deleted";
+ 	echo "<b>Record Deleted</b>";
 
  }
  else{
- 	echo "Failed";
+ 	echo "<b>Failed</b>";
  }
 ?>
