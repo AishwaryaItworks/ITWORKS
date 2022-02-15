@@ -5,15 +5,16 @@ require 'navbar.php';
 
 <div class="container-fluid">
 <div class="col-md-9">
+	<h3>Issued Books</h3>
 	<table class="table table-bordered table-responsive">
 		<thead>
-			<tr>
-				<th>book_id</th>
-				<th>book_name</th>
-				<th>book_author</th>
-				<th>book_price</th>
-				<th>user_id</th>
-				<th>user_name</th>
+			<tr class="bg-warning">
+				<th>Book id</th>
+				<th>Book name</th>
+				<th>Book author</th>
+				<th>Book price</th>
+				<th>User id</th>
+				<th>User name</th>
 				<!-- <th>Action</th> --><!--  -->
 			</tr>
 		</thead>

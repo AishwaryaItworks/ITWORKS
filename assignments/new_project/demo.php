@@ -56,6 +56,10 @@ require 'connection.php';
 				
 				
 			</div>
+
+			<div class="col-md-4">
+				<a href="add_user.php"><button type="button" class="btn bg-primary">Add User</button></a>
+			</div>
 			
 		</div>
 	</div>

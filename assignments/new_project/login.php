@@ -1,8 +1,8 @@
-<?php
+<!-- <php
 session_start();
 
 require 'connection.php';
-?>
+?> -->
 
 <html>
 	<head>
@@ -30,8 +30,11 @@ require 'connection.php';
 				<div class="col-md-4 col-sm-4 col-xs-12">	
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
-					<form class="form-container" method="post" action="login.php" id="my_form" name="my_form">
+					<!-- <form class="form-container" method="post" action="login.php" id="my_form" name="my_form"> -->
+						<form class="form-container" method="post" action="validate.php" id="my_form" name="my_form">
 						<h2>Sign In</h2>
+
+						
 						<div class="form-group">
 							<label for="email">Email:</label>
 							<input type="email" class="form-control" id="email" placeholder="Enter email" name="user_email">
@@ -40,10 +43,14 @@ require 'connection.php';
 							<label for="pwd">Password:</label>
 							<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="user_password">
 						</div>
-						<!-- <div class="checkbox">
-							<label><input type="checkbox" name="remember"> Remember me</label>
-						</div> -->
-						<button type="submit" class="btn btn-default" name="btnclick">Submit</button>
+                        <?php 
+                        if(isset($_GET['error'])){ ?>
+		 		          <p class="error">
+		 		          <?php echo $_GET['error']; ?>
+		 		          </p>
+		 	            <?php } ?> 
+
+						<button type="submit" class="btn btn-default" name="submit">Submit</button>
 					</form>
 					
 				</div>
@@ -83,8 +90,8 @@ require 'connection.php';
 </html>
 
  
-<?php
-if(isset($_POST["btnclick"])){
+<!-- <php
+if(isset($_POST["submit"])){
 	$email=$_POST['user_email'];
 	$password=$_POST['user_password'];
 	$_SESSION['status']=false;
@@ -93,16 +100,22 @@ if(isset($_POST["btnclick"])){
 	$result=$mysqli->query($query);
 	$count=mysqli_num_rows($result);
 
-	if($count>0){
+
+	if($count>0)
+	{
       $_SESSION["user_email"]=$email;
       $_SESSION["user_password"]=$password;
 		$_SESSION["status"]=true;
 		header("Location:demo.php");
+
 	}
-	else{
-		echo "invalid credential";
+	else
+	{
+		echo "Invalid credential";
+		
 	}
 
 
 }
 ?>
+ -->

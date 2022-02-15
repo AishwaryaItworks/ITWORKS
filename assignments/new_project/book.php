@@ -5,14 +5,15 @@ require 'navbar.php';
 
 <div class="container-fluid">
 <div class="col-md-9">
+	<h3>Book Details</h3>
 	<table class="table table-bordered table-responsive">
 		<thead>
-			<tr>
-				<th>book_id</th>
-				<th>book_name</th>
-				<th>book_author</th>
-				<th>book_price</th>
-				<th>user_id</th>
+			<tr class="bg-warning">
+				<th>Book id</th>
+				<th>Book name</th>
+				<th>Book author</th>
+				<th>Book price</th>
+				<th>User id</th>
 				<!-- <th>Action</th> --><!--  -->
 			</tr>
 		</thead>
@@ -38,7 +39,8 @@ require 'navbar.php';
 		
 		
 	</table>
-	<a href="book_record.php"><button type="button">show users name issued book</button></a>
+	<a href="book_record.php"><button type="button">Users name issued book</button></a>
+	<a href="add_book.php"><button type="button">Add book record</button></a>
 </div>
 </div>
 <!-- </div> -->

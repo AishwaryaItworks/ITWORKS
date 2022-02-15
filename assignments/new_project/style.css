@@ -27,7 +27,7 @@ form {
 
 .well{
    	padding-top: 30px;
-    background-color: white;
+    background-color: skyblue;
    }
 
 @media screen and (max-width: 767px) {
@@ -74,6 +74,13 @@ form {
 
 }
 
+/*table{
+  overflow-x: hidden;
+}*/
+/*To create table responsive*/
+/*.table {
+   display: block !important;
+}*/
 .responsive-table > table {
   width: 100%;
   border-collapse: collapse;
@@ -83,6 +90,7 @@ form {
 .responsive-table {
   overflow-x:auto;
 }
+/*End of responsive table*/
 
 .icon-font{
       font-size:17px
@@ -92,6 +100,8 @@ form {
     padding-right:0;
     padding-left:0;
 }
+
+
 
 
 @media only screen and (max-width: 300px) {
@@ -162,3 +172,12 @@ form {
   //CSS
   
 }
+
+.new_font{
+  align-content: center;
+}
+/*add colour to update button*/
+.update_button{
+   color: green;
+}
+

@@ -3,16 +3,18 @@ require 'connection.php';
 require 'navbar.php';
 ?>
 
+
 <div class="container-fluid">
 <div class="col-md-9">
+	<h3>User Details</h3>
 	<table class="table table-bordered table-responsive">
 		<thead>
-			<tr>
-				<th>user_id</th>
-				<th>user_name</th>
-				<th>user_email</th>
-				<th>user_password</th>
-				<th>created_date</th>
+			<tr class="bg-warning">
+				<th>User id</th>
+				<th>User name</th>
+				<th>User email</th>
+				<th>User password</th>
+				<th>Created Date</th>
 				<th>Action</th>
 			</tr>
 		</thead>
@@ -29,8 +31,8 @@ require 'navbar.php';
 			<td><?php echo $fetch_records['user_password']; ?></td>
 			<td><?php echo $fetch_records['created_date']; ?></td>
 			<td>
-				<a href="update_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button">Update</button></a>
-				<a href="delete_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button">Delete</button></a>
+				<a href="update_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button" class="update_button">Update</button></a>
+				<a href="delete_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button"class="btn bg-primary">Delete</button></a>
 			</td>
 		</tr>
 		<?php  }?>

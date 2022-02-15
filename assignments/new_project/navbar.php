@@ -18,6 +18,14 @@ if($_SESSION['status']!=true){
 		<link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!--CSS file end-->
+     
+     <style>
+       a{
+        color: black;
+
+    }
+     </style>
+    
 	</head>
 	<body>
 		
@@ -45,10 +53,10 @@ if($_SESSION['status']!=true){
     <!-- <div class="container"> -->
       <div class="row content sidebarheight">
         <div class="col-md-3 sidenav hidden-xs">
-          <h2>Library<b>Online</b></h2>
+          <h2>     Library<b>Online</b></h2>
           <ul class="nav nav-pills nav-stacked">
             <li><a href="demo.php"><i class="fa fa-home icon-font">Home</i></a></li>
-            <li><a href="book.php"><i class="fa fa-users icon-font">Book List</i></a></li>
+            <li><a href="book.php"><i class="fa fa-book icon-font">Book List</i></a></li>
             <li><a href="user_record.php"><i class="fa fa-users icon-font">Users</i></a></li>
             <li><a href="my_account.php"><i class="fa fa-align-justify icon-font">My Account</i></a></li>
             <li><a href="logout.php"><i class="fa fa-cog icon-font">Logout</i></a></li>
@@ -63,6 +71,3 @@ if($_SESSION['status']!=true){
 
 		
 	
-/*if(isset($_POST['logout'])){
-	header("Location:logout.php");
-} */
