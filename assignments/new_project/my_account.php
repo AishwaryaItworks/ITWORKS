@@ -21,7 +21,8 @@ echo "the session id id: ".$r;*/
 
 <div class="container-fluid">
 <div class="col-md-9">
-<table class="table table-bordered table-responsive">
+	<div class="table-responsive">
+<table class="table table-bordered">
 		<thead>
 			<tr class="bg-warning">
 				<th>User id</th>
@@ -55,6 +56,7 @@ echo "the session id id: ".$r;*/
 		
 		
 	</table>
+</div>
 
 </div>
 </div>

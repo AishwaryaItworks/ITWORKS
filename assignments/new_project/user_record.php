@@ -7,7 +7,8 @@ require 'navbar.php';
 <div class="container-fluid">
 <div class="col-md-9">
 	<h3>User Details</h3>
-	<table class="table table-bordered table-responsive">
+	<div class="table-responsive">
+	<table class="table table-bordered ">
 		<thead>
 			<tr class="bg-warning">
 				<th>User id</th>
@@ -41,6 +42,7 @@ require 'navbar.php';
 		
 		
 	</table>
+</div>
 </div>
 </div>
 <!-- </div> -->
