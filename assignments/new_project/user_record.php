@@ -5,8 +5,14 @@ require 'navbar.php';
 
 
 <div class="container-fluid">
+
 <div class="col-md-9">
-	<h3>User Details</h3>
+    
+	<h3>User Details</h3><br>&nbsp;
+	<a href="add_user.php"><button type="button" class="btn bg-primary">Add User +</button></a>
+    
+	
+
 	<div class="table-responsive">
 	<table class="table table-bordered ">
 		<thead>
@@ -32,8 +38,8 @@ require 'navbar.php';
 			<td><?php echo $fetch_records['user_password']; ?></td>
 			<td><?php echo $fetch_records['created_date']; ?></td>
 			<td>
-				<a href="update_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button" class="update_button">Update</button></a>
-				<a href="delete_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button"class="btn bg-primary">Delete</button></a>
+				<a href="update_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button" class="btn bg-primary">Update</button></a>
+				<a href="delete_record.php? id=<?php echo $fetch_records['user_id'];?>"><button type="button"class="btn btn-danger">Delete</button></a>
 			</td>
 		</tr>
 		<?php  }?>
@@ -44,5 +50,6 @@ require 'navbar.php';
 	</table>
 </div>
 </div>
+<!-- </div> -->
 </div>
 <!-- </div> -->

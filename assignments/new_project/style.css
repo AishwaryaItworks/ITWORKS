@@ -16,7 +16,7 @@ form {
        max-width: 500px;
        margin: 50px auto;
        padding: 30px 20px;
-       box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+       /*box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);*/
      }
 .error
    {
@@ -97,9 +97,10 @@ form {
     }
 
 .padding-0{
-    padding-right:0;
-    padding-left:0;
+    padding-right:50;
+    padding-left:50;
 }
+
 
 
 

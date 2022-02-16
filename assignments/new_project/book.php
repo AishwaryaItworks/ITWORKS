@@ -41,8 +41,8 @@ require 'navbar.php';
 		
 	</table>
 </div>
-	<a href="book_record.php"><button type="button">Users name issued book</button></a>
-	<a href="add_book.php"><button type="button">Add book record</button></a>
+	<a href="book_record.php"><button type="button" class="btn btn-warning">Users Name Issued book</button></a>
+	<a href="add_book.php"><button type="button" class="btn btn-primary">Add book record</button></a>
 </div>
 </div>
 <!-- </div> -->
