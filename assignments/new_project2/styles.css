@@ -1,0 +1,30 @@
+.bg
+{
+	background: url('images/library.jpg') ; 
+	background-size: cover;
+    color: black;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+
+body{
+  overflow-x: hidden;
+  /*background-color: #D3D3D3;*/
+}
+form {
+       background-color: #fff;
+       max-width: 500px;
+       margin: 50px auto;
+       padding: 30px 20px;
+       box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+     }
+.error
+   {
+     color:red;
+     font-family:verdana, Helvetica;
+     /*display: block;*/
+   }
+
+   .well{
+   	padding-top: 30px;
+   }

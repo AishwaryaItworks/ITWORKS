@@ -1,0 +1,185 @@
+.bg
+{
+	background: url('images/library.jpg') ; 
+	background-size: cover;
+    color: black;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+
+body{
+  overflow-x: hidden;
+  /*background-color: #D3D3D3;*/
+}
+.form-container{
+       background-color: #fff;
+       max-width: 500px;
+       margin: 70px auto;
+       padding: 30px 20px;
+       box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+     }
+
+    
+.error
+   {
+     color:red;
+     font-family:verdana, Helvetica;
+     /*display: block;*/
+   }
+
+.well{
+   	padding-top: 30px;
+    background-color: skyblue;
+   }
+
+@media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+
+  @media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+}	
+
+.sidenav {
+      background-color: #50C878;
+      height: 100%;
+    }
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+
+}
+
+/*table{
+  overflow-x: hidden;
+}*/
+/*To create table responsive*/
+/*.table {
+   display: block !important;
+}*/
+.responsive-table > table {
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+  overflow-x:auto;
+  }
+.responsive-table {
+  overflow-x:auto;
+}
+/*End of responsive table*/
+
+.icon-font{
+      font-size:17px
+    }
+
+.padding-0{
+    padding-right:50;
+    padding-left:50;
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
+
+.new_font{
+  align-content: center;
+}
+/*add colour to update button*/
+.update_button{
+   color: green;
+}
+
