@@ -55,21 +55,21 @@
 	  $(document).ready(function() {
       $("#my_form").validate({
       rules: {
-         email:{
+         user_email:{
             required:true,
         },
-        password:{
+        user_password:{
             required:true,
             minlength:8,
             maxlength:15,
          },
      },
      messages:{
-     	email:
+     	user_email:
          {
-            email:"Please enter valid email id"
+            user_email:"Please enter valid email id"
          },
-         password:{
+         user_password:{
             minlength:"Password should be 8 to 15 characters",
             maxlength:"Password should be 8 to 15 characters"
             

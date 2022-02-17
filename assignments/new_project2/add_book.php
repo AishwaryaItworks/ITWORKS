@@ -11,12 +11,12 @@
  
  <form id="myform" name="myform" action="db_fom_book.php" method="post">
   <fieldset>
-  <legend>Add User details</legend>
+  <legend>Add Book details</legend>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <!-- <div class="form-group col-md-6">
     <label for="user_name">Book Id</label>
-    <input type="number" class="form-control" id="book_id" placeholder="book_id" name="book_id">
-  </div>
+    <input type="hidden" class="form-control" id="book_id" placeholder="book_id" name="book_id">
+  </div> -->
 
   
     <div class="form-group col-md-6">

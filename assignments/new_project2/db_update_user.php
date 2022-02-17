@@ -13,10 +13,16 @@ $user_id=$_POST['user_id'];
 
 
 	if($mysqli->query($query)){
-		echo "<b>record updated</b>";
+
+		$_SESSION['message'] = "Record Got Updated!!!";
+            header("Location: user_record.php");
+		
 
 	}
 	else{
-		echo "failed";
+
+		$_SESSION['message'] = "fail to update Record";
+            header("Location: user_record.php");
+		
 	}
 ?>

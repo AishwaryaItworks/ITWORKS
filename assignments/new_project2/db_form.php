@@ -7,9 +7,7 @@ require 'navbar.php';
 	$user_name=$_POST['user_name'];
 	$user_email=$_POST['user_email'];
 	$user_password=$_POST['user_password'];
-	/*$created_date=$_POST['created_date'];*/
-	/*end of detail*/
-
+	
 	/*Add user details*/
      $user_detail_id=$_POST['user_detail_id'];
 	$user_city=$_POST['user_city'];
@@ -38,12 +36,17 @@ require 'navbar.php';
     $res1=$mysqli->query($query2);
 
   if($res && $res1){
-  	echo "     Record Added";
+
+  	$_SESSION['message'] = "Record is Added!!!";
+            header("Location: user_record.php");
+  	/*echo "     Record Added";*/
 
   }
   
   else{
-  	echo "     Failed";
+  	$_SESSION['message'] = "Fail to add Record!!!";
+            header("Location: user_record.php");
+  	/*echo "     Failed";*/
   }
 
 ?>
