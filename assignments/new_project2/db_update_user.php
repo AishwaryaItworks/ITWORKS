@@ -17,7 +17,7 @@ $user_id=$_POST['user_id'];
 		$_SESSION['message'] = "Record Got Updated!!!";
             header("Location: user_record.php");
 		
-
+S
 	}
 	else{
 

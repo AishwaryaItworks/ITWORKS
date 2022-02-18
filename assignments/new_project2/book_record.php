@@ -5,7 +5,9 @@ require 'navbar.php';
 
 <div class="container-fluid">
 <div class="col-md-9">
+	<div class="well">
 	<h3>Issued Books</h3>
+</div>
 	<div class="table-responsive">
 	<table class="table table-bordered ">
 		<thead>
@@ -46,4 +48,9 @@ require 'navbar.php';
 	
 </div>
 </div>
+<script>
+	$_SESSION['message'] = "Record Updation Failed!!!";
+        header("Location: user.php");
+
+	</script>
 <!-- </div> -->

@@ -13,12 +13,15 @@ require 'navbar.php';
 	$query="INSERT INTO books(book_name,book_author,book_price,user_id)VALUES('".$book_name."','".$book_author."','".$book_price."','".$user_id."')";
 
   if($mysqli->query($query)){
-  	echo "     Record Added";
+
+  	$_SESSION['message'] = "Record is inserted!!!";
+            header("Location: book.php");
+  	/*echo "Record Added";*/
 
   }
   
   else{
-  	echo "    Fail To Add Record";
+  	echo "Fail To Add Record";
   }
 
 ?>

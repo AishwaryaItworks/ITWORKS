@@ -9,7 +9,7 @@
  <br/>
  <!-- <h3>&nbsp;&nbsp;Add User Details</h3> -->
  
- <form id="myform" name="myform" action="db_fom_book.php" method="post">
+ <form id="myform" name="myform" action="db_fom_book.php" method="post" autocomplete="off">
   <fieldset>
   <legend>Add Book details</legend>
   <div class="form-row">
@@ -33,7 +33,7 @@
     
   <div class="form-group col-md-6">
     <label for="book_price">Book price</label>
-      <input type="text" class="form-control" id="book_price" name="book_price">
+      <input type="number" class="form-control" id="book_price" name="book_price">
   </div>
 </div>
   
@@ -52,6 +52,31 @@
 </form>
 
 </div>
+<script>
+  /*<script>*/
+$(document).ready(function() {
+$("#myform").validate({
+    rules: {
+
+    book_name : {
+    required: true,
+    },
+
+    book_price: {
+    required: true,
+    
+    },
+
+
+    user_id:{
+      required:true,
+      /*password:true*/
+    },
+
+    }
+    });
+    });
+</script>
 
 
 

@@ -8,13 +8,13 @@
 
  if($mysqli->query($query)){
 
-    $_SESSION['message'] = "Record Got Deleted!!!";
+    $_SESSION['message'] = "Record Deleted!!!";
             header("Location: user_record.php");
  	/*echo "<b>Record Deleted</b>"*/;
 
  }
  else{
- 	$_SESSION['message'] = "Fail to delete Record!!!";
+ 	$_SESSION['message'] = "Fail to delete record!!!";
             header("Location: user_record.php");
  }
 ?>

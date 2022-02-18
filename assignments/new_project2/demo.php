@@ -18,13 +18,13 @@ require 'connection.php';
 			
 			<div class="col-md-4">
 				<?php
-				$query="SELECT * FROM user";
+				$query="SELECT * FROM books where user_id";
 				$result=$mysqli->query($query);
 					$count=mysqli_num_rows($result);
 					if($count>0){
 				?>
-				<i class="fa fa-user fa-4x"></i>
-				<h4>Total Book issued</h4>
+				<i class="fa fa-book fa-4x"></i>
+				<h4>Total Book Issued</h4>
 				
 				<?php
 				echo " <b><h3>$count</h3></b>";
@@ -33,7 +33,7 @@ require 'connection.php';
 			</div>
 			<div class="col-md-4">
 				<?php
-				$query2="SELECT * FROM books";
+				$query2="SELECT * FROM user";
 				$book_result=$mysqli->query($query2);
 				$count2=mysqli_num_rows($book_result);
 				

@@ -18,7 +18,7 @@ while($fetch_records=$result->fetch_assoc()){
 <div class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
  <br/>
  <!-- <h3>&nbsp;&nbsp;Update the User Detail</h3> -->
- <form action="db_update_user.php" method="post" class="new_form">
+ <form action="db_update_user.php" method="post" class="new_form" autocomplete="off">
   <fieldset>
     <legend>Update User Details</legend>
    <div class="form-group">
@@ -51,6 +51,7 @@ while($fetch_records=$result->fetch_assoc()){
 
   <div class="form-row">
   <div class="form-group col-md-6">
+    
    <button type="submit" class="btn btn-primary">update</button>
  </div>
 </div>

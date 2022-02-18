@@ -5,8 +5,8 @@ require 'navbar.php';
 ?>
 
 
-
-<div class="well well-sm">
+<div class="col-md-9">
+<div class="well">
 <h3>&nbsp;&nbsp;<i class='fa fa-user'><?php
 echo $_SESSION["user_email"];
 
@@ -17,6 +17,8 @@ echo "the session id: ".$r;
 
 ?></i></h3>
 </div>
+</div>
+
 
 
 <div class="container-fluid">
