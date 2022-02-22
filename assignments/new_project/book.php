@@ -5,7 +5,25 @@ require 'navbar.php';
 
 <div class="container-fluid">
 <div class="col-md-9">
+	<div class="well">
 	<h3>Book Details</h3>
+</div>
+
+
+<div class="container-fluid">
+     <div class="row">
+     <div class="col">
+     <?php if(isset($_SESSION['message'])): ?>
+     <div class="alert alert-success">
+     <?php echo $_SESSION['message']; ?>
+     </div>
+<?php endif; ?>
+<?php unset($_SESSION['message']); ?>
+     </div>
+     </div>
+    </div>
+
+
 	<div class="table-responsive">
 	<table class="table table-bordered ">
 		<thead>
@@ -24,6 +42,8 @@ require 'navbar.php';
 		/*SELECT books.*,users.user_name FROM books join users on books.user_id=users.user_id;*/
 		$query="SELECT * FROM books";
 		$result=$mysqli->query($query);
+
+		$book_join="SELECT books.*,user.user_name from books RIGHT OUTER JOIN user on books.book_id=user.user_id";
 		
 		while($fetch_records=$result->fetch_assoc()){?>
 		<tr>
@@ -45,4 +65,12 @@ require 'navbar.php';
 	<a href="add_book.php"><button type="button" class="btn btn-primary">Add book record</button></a>
 </div>
 </div>
-<!-- </div> -->
+
+<script>
+    /*Remove the alert which are showing after few seconds*/
+    setTimeout(function() {
+        let alert = document.querySelector(".alert");
+            alert.remove();
+    }, 3000);
+    
+    </script>

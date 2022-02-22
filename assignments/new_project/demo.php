@@ -15,31 +15,25 @@ require 'connection.php';
 					</div>
 				</nav>
 			</div>
-			<!-- <div class="col-sm-3 padding-0">
-				<div class="rotate">
-					<i class="fa fa-user fa-4x"></i>
-				</div>
-				<h6 class="text-uppercase">Total Insurance Agencies</h6>
-				<h1 class="display-4">134</h1>
-			</div> -->
+			
 			<div class="col-md-4">
 				<?php
-				$query="SELECT * FROM users";
+				$query="SELECT * FROM books where user_id";
 				$result=$mysqli->query($query);
 					$count=mysqli_num_rows($result);
 					if($count>0){
 				?>
-				<i class="fa fa-user fa-4x"></i>
-				<h3>Total Book issued</h3>
+				<i class="fa fa-book fa-4x"></i>
+				<h4>Total Book Issued</h4>
 				
 				<?php
-				echo " <b>$count</b>";
+				echo " <b><h3>$count</h3></b>";
 				}
 				?>
 			</div>
 			<div class="col-md-4">
 				<?php
-				$query2="SELECT * FROM books";
+				$query2="SELECT * FROM user";
 				$book_result=$mysqli->query($query2);
 				$count2=mysqli_num_rows($book_result);
 				
@@ -47,19 +41,16 @@ require 'connection.php';
 					if($count2>0){
 				?>
 				<i class="fa fa-user fa-4x"></i>
-				<h3>Total User</h3>
+				<h4>Total User</h4>
 				
 				<?php
-				echo " <b>$count2</b>";
+				echo " <b><h3>$count2</h3></b>";
 				}
 				?>
 				
 				
 			</div>
-
-			<!-- <div class="col-md-4">
-				<a href="add_user.php"><button type="button" class="btn bg-primary">Add User</button></a>
-			</div> -->
 			
 		</div>
 	</div>
+</div>

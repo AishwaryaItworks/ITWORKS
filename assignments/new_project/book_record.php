@@ -5,7 +5,9 @@ require 'navbar.php';
 
 <div class="container-fluid">
 <div class="col-md-9">
+	<div class="well">
 	<h3>Issued Books</h3>
+</div>
 	<div class="table-responsive">
 	<table class="table table-bordered ">
 		<thead>
@@ -22,7 +24,7 @@ require 'navbar.php';
 		<?php
 		
 
-		$query="SELECT books.*,users.user_name FROM books join users on books.user_id=users.user_id";
+		$query="SELECT books.*,user.user_name FROM books join user on books.user_id=user.user_id";
 /*		$query="SELECT * FROM books";
 */		$result=$mysqli->query($query);
 		
@@ -46,4 +48,9 @@ require 'navbar.php';
 	
 </div>
 </div>
+<script>
+	$_SESSION['message'] = "Record Updation Failed!!!";
+        header("Location: user.php");
+
+	</script>
 <!-- </div> -->

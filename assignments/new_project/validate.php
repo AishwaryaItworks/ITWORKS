@@ -9,7 +9,7 @@ if(isset($_POST["submit"])){
 	$password=$_POST['user_password'];
 	$_SESSION['status']=false;
 
-	$query="SELECT * FROM users where user_email='$email' and user_password='$password'";
+	$query="SELECT * FROM user where user_email='$email' and user_password='$password'";
 	$result=$mysqli->query($query);
 	$count=mysqli_num_rows($result);
 

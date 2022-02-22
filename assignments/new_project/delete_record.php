@@ -4,13 +4,17 @@
 
  $id=$_GET['id'];
 
- $query="DELETE FROM users where user_id=".$id;
+ $query="DELETE FROM user where user_id=".$id;
 
  if($mysqli->query($query)){
- 	echo "<b>Record Deleted</b>";
+
+    $_SESSION['message'] = "Record Deleted!!!";
+            header("Location: user_record.php");
+ 	/*echo "<b>Record Deleted</b>"*/;
 
  }
  else{
- 	echo "<b>Failed</b>";
+ 	$_SESSION['message'] = "Fail to delete record!!!";
+            header("Location: user_record.php");
  }
 ?>
