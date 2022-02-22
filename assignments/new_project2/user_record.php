@@ -51,17 +51,17 @@ require 'navbar.php';
 					<td>
 						
 						  <a href="update_record.php?id=<?php echo $fetch_records['user_id'];?>">
-          <button class="btn btn-primary">Update</button>
+          <button class="btn btn-primary" id="<?php echo $fetch_records['user_id']; ?>">Update</button>
         </a>
 						
 
 						<!-- For delete record -->
-						<button type="button" class="btn btn-danger" id="btn2" data-toggle="modal" data-target="#exampleModal_<?php echo $fetch_records['user_id']; ?>">
+						<button type="button" class="btn btn-danger" id="btn2" data-toggle="modal" data-target="#exampleModal">
 						Delete
 						</button>
 							
 						<!-- Modal -->
-						<div class="modal fade" id="exampleModal_<?php echo $fetch_records['user_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-md" role="document">
 								<div class="modal-content">
 									<div class="modal-header">

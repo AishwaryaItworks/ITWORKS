@@ -3,17 +3,10 @@ require 'connection.php';
 ?>
 <div class="container-fluid">
 	<div class="row">
-		
-		
-		
 		<div class="col-md-9">
 			
-			<div class="well well-sm">
-				<nav class="navbar">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#">HOME</a>
-					</div>
-				</nav>
+			<div class="well">	
+			<h3>HOME</h3>		
 			</div>
 			
 			<div class="col-md-4">

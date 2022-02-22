@@ -1,3 +1,5 @@
+
+<!-- Delete record file -->
 <?php
  require 'connection.php';
  require 'navbar.php';

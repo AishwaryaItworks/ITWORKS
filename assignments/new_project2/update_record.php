@@ -50,7 +50,7 @@ while($fetch_records=$result->fetch_assoc()){
 </div>
 
   <div class="form-row">
-  <div class="form-group col-md-6">
+  <div class="form-group col-md-4 col-md-offset-4">
     
    <button type="submit" class="btn btn-primary">update</button>
  </div>
